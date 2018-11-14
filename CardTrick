@@ -12,17 +12,17 @@ public class CardTrick{
 		String card = SuitofHearts[new Random().nextInt(SuitofHearts.length)];
 
 			// Users Card Guess
-			System.out.println("Please enter your guess in the same format as the above code");
-		    Scanner User = new Scanner(System.in);
-			    String GuessedCard = User.nextLine();
+		System.out.println("Please enter your guess in the same format as the above code");
+		Scanner User = new Scanner(System.in);
+		String GuessedCard = User.nextLine();
 
 			
       // Compares the users card guess against the codes card choice and prints the outcome.
-			  if(GuessedCard.equals(card)) {
-			  	System.out.println("well done you guessed correctly !");
-			    }
+		if(GuessedCard.equals(card)) {
+		  	System.out.println("well done you guessed correctly !");
+		}
       
-      else System.out.println("Better Luck Next time, the card the code picked was " + card);
+      		else System.out.println("Better Luck Next time, the card the code picked was " + card);
 
 	}
 
